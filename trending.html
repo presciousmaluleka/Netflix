@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+         <link rel="stylesheet" type="text/css" href="style.css">
+        
+      <title> Netflix</title>
+    </head>
+    <body> 
+       <div class="bottom-curve"></div>
+         <h1>Trending Now</h1>
+
+      <div class="trending-wrapper">
+
+        <!------------button left---------------->
+       <button class="scroll-btn scroll-left" onclick="scrollLeft()">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path fill-rule="evenodd" clip-rule="evenodd" 
+              d="M8.41406 12L15.707 4.70706L14.2928 3.29285L6.29285 11.2928C6.10522 11.4804 6 11.7347 6 12C6 12.2652 6.10522 12.5195 6.29285 12.7071L14.2928 20.7071L15.707 19.2928L8.41406 12Z"/>
+      </svg>
+       </button>
+    
+
+    <!-- Card 1 -->
+    <div class="trending-container" id="scroll-container">
+    <div class="show-card">
+      <div class="rank-number">1</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABag2kEue9WidTfMbm1lCmdJh4AQCXw-BC5EFnEj4AqZs8vtfkIO1JX-Rj5R5Ftsf5RWbpFJ_MfKb4lkHE2DhzduqXj00CCVBoivaaCocvq3_tmRi1wOtG_ME4otynJotXTRE.jpg?r=553"  alt="Movie 1">
+        <div class="poster-overlay"></div>
+       
+    </div>
+
+    <!-- Card 2 -->
+    <div class="show-card">
+      <div class="rank-number">2</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZbuaaFak-EaLBhJT2LWt0A7bjKE814fdhHTv6Pn5pk-MyFZkNy9PRfoEMW05Nzvs5RwE7BZAO6GwwsIYMWKHBq5qE_PKwR9HxHmEmchXsdPXX4AiqjAXMdih3fGc1m0mga-.jpg?r=25b)"  alt="Movie 2">
+      <div class="poster-overlay"></div>
+     
+    </div>
+    <!-- Card 3 -->
+    <div class="show-card">
+      <div class="rank-number">3</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABY0wANSWb4B7AXPAgRtiUhNAIgBk9GaGJsYOSNs0s82P7hNkKz4K2eDe0ZBMQ5YcZHDY_KPh5Ap0FzVl_mHCN9TYbcpoVs5Y3qXXphqhS9OHs4lhGwYROGvFE1W-V9yPJ97y.jpg?r=d53" alt="Movie3">
+      <div class="poster-overlay"></div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="show-card">
+      <div class="rank-number">4</div>
+      <img src=https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdx_nf4ozRax17AaHDiwMcB8r0L7EotarC3IMBEvh1OZGsK2Cn1aihnzZSHApeZoBgFG1moFGRHo2Uq1FCpPWskYCWNelnm4hQ5dm2tOGSvRw4zZG9rM0iQTLGOJqdayPcDn.jpg?r=2ca"   alt="Movie 4">
+      <div class="poster-overlay"></div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="show-card">
+      <div class="rank-number">5</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABeoohnxFnnker6egKMvwn6DeDzabFIl9ofD4lkS5kkiTPw-oLlWlg5EpZ55JS5_fxaNaPe3XQikLVASgsLctH9EVpSaAa9-tUfqu6sGD8TTXs0N1KWu9-ZWOWYdhA6HajAgl.jpg?r=f17"  alt="Movie 5">
+      <div class="poster-overlay"></div>
+  
+    </div>
+
+    <!-- Card 6 -->
+    <div class="show-card">
+      <div class="rank-number">6</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABU0axjJHoE8xDAu6zYTBcBEY1Q9go2XmJzIu9gWbm7E-mp6bstfe96ZngjRccWnuDwCsfjX0LRODCPF-LdOEuBGhDuBhIEz6jbdfUjV-FTSLb0mBjq7R1wQAMc6FpN-4Hw5y.jpg?r=2be"  alt="Movie 6">
+      <div class="poster-overlay"></div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="show-card">
+      <div class="rank-number">7</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRveE9UZdTkrDaKaP7hU3_aDg9nLvJtoNAK4MNaFXnVyB3deqeQFzEYRHTaBrBRdLnkGwiS5ICXsmW3uOU_6xn0YLaoiYJTb5lGesXGFxdwiYtJiim4AYG578JQzCR-by0lM.jpg?r=605" alt="Movie 7">
+      <div class="poster-overlay"></div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="show-card">
+      <div class="rank-number">8</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdD7qlvPhSOg9Sz44Swldbt_ujg-M2Rf5iMX5I1Lp6uVp2vCT-lUciALqFkHGW8IfVXQPQg8L-RngokP-V2StvdRUnxbq_VrSFE.jpg?r=0ad"   alt="Movie 8">
+      <div class="poster-overlay"></div>
+  
+    </div>
+
+    <!-- Card 9 -->
+    <div class="show-card">
+      <div class="rank-number">9</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXYdBAe3X5R0Lhv1g-jeMi3UePskTmxzdJIMOmTgOGNcPOxd6t12a0cC67mLL3YGEuhv-kVZCC8KVWaZxl7F3rJ5BPH2jta5Q6xfSzWnMyhevoNXvzKY4Losqv9_LvD7Cbq8.jpg?r=49b"  alt="Movie 9">
+      <div class="poster-overlay"></div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="show-card">
+      <div class="rank-number">10</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABceC2vyAj5XgsSj6xcz5c0hDdNyFFiILcQ8EB62ol-0djIEXbmimPvvtm7kKKIRgjBM6gqJBeUxByhtJ7RVTn2RSbBGIsLIJQ-4l_1rmT2RGe4Ygn_dnr0VtVFdDWwjb9cOT.jpg?r=e94"  alt="Movie 10">
+      <div class="poster-overlay" ></div>
+</div>
+
+      <button class="scroll-btn scroll-right" onclick="scrollRight()">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path fill-rule="evenodd" clip-rule="evenodd" 
+              d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"/>
+      </svg>
+    </button>
+    </div>
+  </div>
+  </div>
+</body>  
+</html>
