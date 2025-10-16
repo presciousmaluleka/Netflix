@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta http-equiv="content-type" content="text/html"; charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1"/>
+         <link rel="stylesheet" type="text/css" href="netflix.css">
+         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+      <title> Netflix</title>
+    </head>
+    <body> 
+    <!----------------------------------------------Main Page---------------------------------------------------------------------------------------------->
+  <div class="container">
+            <header class="header">
+                <div class class="netflix-logo"aria-label="Netflix logo" >
+                 <svg class="nf-icon" viewBox="0 0 100 100" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    </svg>
+                        <h1 class="nf-wordmark">NETFLIX</h1>
+
+                </div>
+                <button class="sign-in-btn">Sign In</button>
+                </header>
+                <section class="hero">
+                    <h1>Unlimited, movies, TV shows, and more</h1>
+                    <p>Starts at R59. Cancel anytime</p>
+                    <p>Ready to watch? Enter your email to create or restart yout membership </p>
+                    <div class="email-form">
+                        <input type="email"
+                        class="email-input" placeholder="Email address" required>
+                        <button class="get-started-btn">Get Started</button>
+                        </div>
+                </section>
+
+<!------------------------------------------------------MAIN PAGE ENDS ----------------------------------------------------------------------------------------->
+<!------------------------------------------------------TRENDING NOW PAGE STARTS-------------------------------------------------------------------------------------------------------->
+
+       <div class="bottom-curve"></div>
+         <h2>Trending Now</h2>
+
+      <div class="trending-wrapper">
+
+        <!------------button left---------------->
+       <button class="scroll-btn scroll-left" onclick="scrollLeft()">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path fill-rule="evenodd" clip-rule="evenodd" 
+              d="M8.41406 12L15.707 4.70706L14.2928 3.29285L6.29285 11.2928C6.10522 11.4804 6 11.7347 6 12C6 12.2652 6.10522 12.5195 6.29285 12.7071L14.2928 20.7071L15.707 19.2928L8.41406 12Z"/>
+      </svg>
+       </button>
+    
+
+    <!-- Card 1 -->
+    <div class="trending-container" id="scroll-container">
+    <div class="show-card">
+      <div class="rank-number">1</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABag2kEue9WidTfMbm1lCmdJh4AQCXw-BC5EFnEj4AqZs8vtfkIO1JX-Rj5R5Ftsf5RWbpFJ_MfKb4lkHE2DhzduqXj00CCVBoivaaCocvq3_tmRi1wOtG_ME4otynJotXTRE.jpg?r=553"  alt="Movie 1">
+        <div class="poster-overlay"></div>
+       
+    </div>
+
+    <!-- Card 2 -->
+    <div class="show-card">
+      <div class="rank-number">2</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZbuaaFak-EaLBhJT2LWt0A7bjKE814fdhHTv6Pn5pk-MyFZkNy9PRfoEMW05Nzvs5RwE7BZAO6GwwsIYMWKHBq5qE_PKwR9HxHmEmchXsdPXX4AiqjAXMdih3fGc1m0mga-.jpg?r=25b)"  alt="Movie 2">
+      <div class="poster-overlay"></div>
+     
+    </div>
+    <!-- Card 3 -->
+    <div class="show-card">
+      <div class="rank-number">3</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABY0wANSWb4B7AXPAgRtiUhNAIgBk9GaGJsYOSNs0s82P7hNkKz4K2eDe0ZBMQ5YcZHDY_KPh5Ap0FzVl_mHCN9TYbcpoVs5Y3qXXphqhS9OHs4lhGwYROGvFE1W-V9yPJ97y.jpg?r=d53" alt="Movie3">
+      <div class="poster-overlay"></div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="show-card">
+      <div class="rank-number">4</div>
+      <img src=https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdx_nf4ozRax17AaHDiwMcB8r0L7EotarC3IMBEvh1OZGsK2Cn1aihnzZSHApeZoBgFG1moFGRHo2Uq1FCpPWskYCWNelnm4hQ5dm2tOGSvRw4zZG9rM0iQTLGOJqdayPcDn.jpg?r=2ca"   alt="Movie 4">
+      <div class="poster-overlay"></div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="show-card">
+      <div class="rank-number">5</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABeoohnxFnnker6egKMvwn6DeDzabFIl9ofD4lkS5kkiTPw-oLlWlg5EpZ55JS5_fxaNaPe3XQikLVASgsLctH9EVpSaAa9-tUfqu6sGD8TTXs0N1KWu9-ZWOWYdhA6HajAgl.jpg?r=f17"  alt="Movie 5">
+      <div class="poster-overlay"></div>
+  
+    </div>
+
+    <!-- Card 6 -->
+    <div class="show-card">
+      <div class="rank-number">6</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABU0axjJHoE8xDAu6zYTBcBEY1Q9go2XmJzIu9gWbm7E-mp6bstfe96ZngjRccWnuDwCsfjX0LRODCPF-LdOEuBGhDuBhIEz6jbdfUjV-FTSLb0mBjq7R1wQAMc6FpN-4Hw5y.jpg?r=2be"  alt="Movie 6">
+      <div class="poster-overlay"></div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="show-card">
+      <div class="rank-number">7</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRveE9UZdTkrDaKaP7hU3_aDg9nLvJtoNAK4MNaFXnVyB3deqeQFzEYRHTaBrBRdLnkGwiS5ICXsmW3uOU_6xn0YLaoiYJTb5lGesXGFxdwiYtJiim4AYG578JQzCR-by0lM.jpg?r=605" alt="Movie 7">
+      <div class="poster-overlay"></div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="show-card">
+      <div class="rank-number">8</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdD7qlvPhSOg9Sz44Swldbt_ujg-M2Rf5iMX5I1Lp6uVp2vCT-lUciALqFkHGW8IfVXQPQg8L-RngokP-V2StvdRUnxbq_VrSFE.jpg?r=0ad"   alt="Movie 8">
+      <div class="poster-overlay"></div>
+  
+    </div>
+
+    <!-- Card 9 -->
+    <div class="show-card">
+      <div class="rank-number">9</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXYdBAe3X5R0Lhv1g-jeMi3UePskTmxzdJIMOmTgOGNcPOxd6t12a0cC67mLL3YGEuhv-kVZCC8KVWaZxl7F3rJ5BPH2jta5Q6xfSzWnMyhevoNXvzKY4Losqv9_LvD7Cbq8.jpg?r=49b"  alt="Movie 9">
+      <div class="poster-overlay"></div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="show-card">
+      <div class="rank-number">10</div>
+      <img src="https://occ-0-8051-34.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABceC2vyAj5XgsSj6xcz5c0hDdNyFFiILcQ8EB62ol-0djIEXbmimPvvtm7kKKIRgjBM6gqJBeUxByhtJ7RVTn2RSbBGIsLIJQ-4l_1rmT2RGe4Ygn_dnr0VtVFdDWwjb9cOT.jpg?r=e94"  alt="Movie 10">
+      <div class="poster-overlay" ></div>
+</div>
+
+      <button class="scroll-btn scroll-right" onclick="scrollRight()">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path fill-rule="evenodd" clip-rule="evenodd" 
+              d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"/>
+      </svg>
+    </button>
+    </div>
+  </div>
+  </div>
+<!----------------------------------------------TRENDING NOW ENDS--------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------ ---MORE REASONS BEGINS------------------------------------------------------------------------------------------------->
+    <section class="reasons-section">
+    <h3>More Reasons to Join</h3>
+
+    <div class="reasons-grid">
+
+      <div class="reason-card">
+        <div>
+   
+          <h3>Enjoy on your TV</h3>
+          <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+        <div class="reason-icon"> 
+      <img src="https://cdn-icons-png.flaticon.com/128/3142/3142083.png" alt="" >
+        </div>
+        </div>
+
+      <div class="reason-card">
+        <div>
+          <h3>Download your shows to watch offline</h3>
+          <p>Save your favorites easily and always have something to watch.</p>
+        </div>
+        <div class="reason-icon">
+          <img src="https://cdn-icons-png.freepik.com/512/13077/13077757.png" alt="Download Icon">
+        </div>
+      </div>
+
+      <div class="reason-card">
+        <div>
+          <h3>Watch everywhere</h3>
+          <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="reason-icon">
+          <img src="https://cdn-icons-png.flaticon.com/128/7435/7435796.png" alt="Projector Icon">
+        </div>
+      </div>
+
+      <div class="reason-card">
+        <div>
+          <h3>Create profiles for kids</h3>
+          <p>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+        </div>
+        <div class="reason-icon">
+          <img src="https://cdn-icons-png.flaticon.com/128/16395/16395288.png" alt="Kids Icon">
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!------------------------------------MORE REASONS ENDS----------------------------------------------------------------------------------------------->
+<!-------------------------------------REQUENTLY ASKED QUESTIONS BEGINS--------------------------------------------------------------------------->
+ <main class="faq-page">
+    <h4 class="title">Frequently Asked Questions</h4>
+    <section class="faq">
+      <!-- Question 1 -->
+      <details class="faq-item" open>
+        <summary class="faq-question">What is Netflix?</summary>
+        <div class="faq-answer">
+          <p>
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+          </p>
+          <p>
+            You can watch as much as you want, whenever you want, without a single commercial – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+          </p>
+        </div>
+      </details>
+
+      <!-- Question 2 -->
+      <details class="faq-item">
+        <summary class="faq-question">How much does Netflix cost?</summary>
+        <div class="faq-answer">
+          <p>
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. 
+            Plans range from <strong>R59 to R229</strong> per month. No extra costs, no contracts.
+          </p>
+        </div>
+      </details>
+
+      <!-- Question 3 -->
+      <details class="faq-item">
+        <summary class="faq-question">Where can I watch?</summary>
+        <div class="faq-answer">
+          <p>
+            Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+You can also download your favorite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+          </p>
+
+      <p>       You can also download your favorite shows with the iOS or Android app to watch offline. Take Netflix with you anywhere.</p>
+        </div>
+      </details>
+
+      <!-- Question 4 -->
+      <details class="faq-item">
+        <summary class="faq-question">How do I cancel?</summary>
+        <div class="faq-answer">
+      <p>
+            Netflix is flexible. There are no contracts and no commitments. 
+            You can cancel your account online in just two clicks — no cancellation fees. Start or stop your membership anytime.
+          </p>
+        </div>
+      </details>
+
+      <!-- Question 5 -->
+      <details class="faq-item">
+        <summary class="faq-question">What can I watch on Netflix?</summary>
+        <div class="faq-answer">
+          <p>
+
+            Netflix has a massive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. 
+
+            Watch as much as you want, anytime you
+          </p>
+        </div>
+      </details>
+      </section>
+ </main>
+<!-------------------------------------------------FREQUENTLY ASKED QUESTIONS------------------------------------------------------------------------------------>
+<!--------------------------------------FOOTER BEGINS-------------------------------------------------------------------------------------------------->
+   <footer class="footer">
+                   <p>Ready to watch? Enter your email to create or restart your memebership</p>
+                   <div class="email-form">
+                        <input type="email"
+                        class="email-input" placeholder="Email address" required>
+                       <button class="get-started-btn">Get Started</button>
+                   </div>
+                        <div class="footer-content">
+                            <div class="footer-top">
+                            <p class="phone-number">Questions? Call 0800 100 046</p>
+                            </div>
+
+                            <div class="footer-links">
+                                <a href="#" class="footer-link">FAQ</a>
+                                <a href="#" class="footer-link">Help Center</a>
+                                <a href="#" class="footer-link">Account</a>
+                                <a href="#" class="footer-link">Media Center</a>
+                                <a href="#" class="footer-link">Investor Relations</a>
+                                <a href="#" class="footer-link">Jobs</a>
+                                <a href="#" class="footer-link">Redeem Gift Cards</a>
+                                <a href="#" class="footer-link">Buy Gift Cards</a>
+                                <a href="#" class="footer-link">Ways to Watch</a>
+                                <a href="#" class="footer-link">Terms of Use</a>
+                                <a href="#" class="footer-link">Privacy</a>
+                                <a href="#" class="footer-link">Cookie Preferences</a>
+                                <a href="#" class="footer-link">Corporate Information</a>
+                                <a href="#" class="footer-link">Contact Us</a>
+                                <a href="#" class="footer-link">Speed Test</a>
+                                <a href="#" class="footer-link">Legal Notices</a>
+                                <a href="#" class="footer-link">Only on Netflix</a>
+                                </div>
+                                <div class="language-selector">
+                                    <button class="language-btn">English</button>
+                                    </div>
+                                    <div class="footer-button">
+                                        <p>Netflix South Africa</p>
+                                        <p class="recaptcha-notice">This page is protected by Google reCAPTCHA to 
+                                            ensure you're not a bot. <a href="#">Learn more</a>.</p>
+                                </div>
+                             </div>
+                        </footer>
+                    </div>
+  <!-----------------------------------------FOOTER ENDS-------------------------------------------------------------------->
+</body>  
+</html>
+<!-----------------------------------------APPLICATION ENDS---------------------------------------------------------------------------------------->

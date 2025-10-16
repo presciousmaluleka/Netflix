@@ -1,0 +1,614 @@
+ /*-------------------------------------MAIN PAGE CSS--------------------------------------------------------------------------------*/
+ :root{
+    --nf-red: #E50914;
+    --bg: #141414;
+ }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.netflix-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px 18px;
+    align-items: baseline;
+    margin: 0;
+}
+  .nf-icon{
+    width: 72px;        /* change to scale icon */
+    height: 72px;
+    display: block;
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,0.6));
+  }
+
+  /* Wordmark */
+  .nf-wordmark{
+    color: var(--nf-red);
+    font-size: 56px;    /* change to scale wordmark */
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+    text-shadow:
+      0 2px 0 rgba(0,0,0,0.35),
+      0 6px 18px rgba(0,0,0,0.45);
+  }
+
+  /* Responsive scaling on small screens */
+  @media (max-width:420px){
+    .nf-icon{ width: 48px; height: 48px; }
+    .nf-wordmark{ font-size: 30px; letter-spacing: 4px; }
+  }
+
+  /* Fun hover: slight shift & glow */
+  .netflix-logo:hover .nf-wordmark{ transform: translateY(-2px); transition: .22s ease;
+   }
+
+.sign-in-btn {
+    background-color: #e50914;
+    color: white;
+    padding: 7px 17px;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.sign-in-btn:hover {
+    background-color: #f40612;
+}
+.hero {
+    text-align: center;
+    padding: 75px 0;
+    background-color: linear-gradient(to top, rgba(0,0,0,0.8)0, rgba(0,0,0,0)60%, rgba(0,0,0,0.8)100%);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero h1 {
+    font-size: 3.125rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero h2 {
+    font-size: 1.625rem;
+    margin-bottom: 29px;
+    font-weight: 400;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.email-form {
+    display: flex;
+    justify-content: center;
+    max-width: 670px;
+    margin: 0 auto;
+}
+.email-input {
+    flex-grow: 1;
+    padding: 10px 10px 0;
+    height: 60px;
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+    background-color: rgba(22,22,22,0.7);
+    color: white;
+    min-width: 450px;
+}
+.email-input:focus {
+    outline: none;
+    border-color: white;
+}
+.get-started-btn {
+    background-color: #e50914;
+    color: white;
+    font-size: 1.625rem;
+    border: none;
+    padding: 0 1em;
+    border-radius: 2px;
+    cursor: pointer;
+    min-width: 180px;
+    font-weight: 400;
+}
+.get-started-btn:hover {
+    background-color: #f40612;
+}
+/*---------------------------------------------MAIN PAGE ENDS CSS---------------------------------------------------------------------------------*/
+/*-------------------------------------------------CURVE BEGINS CSS---------------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bottom-curve{
+  border:4px solid rgba(255, 0, 64, 0.895); 
+    border-radius: 100% 100% 6px 6px;
+    height:100px;
+    width:100%;
+    background: linear-gradient(to right, rgb(6, 1, 13) 16%, rgb(17, 0, 17), rgb(27, 3, 67), rgb(10, 2, 25), rgb(10, 1, 5) 84%);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    
+  }
+  /*------------------------------------------------END CURVE CSS-----------------------------------------------------------------------------------*/
+
+body {
+  background-color: #141414;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+  /*-----------------------------------------------------------TRENDING NOW BEGINS CSS---------------------------------------------------------------*/
+h2 {
+  font-family: unset;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  align-items: baseline;
+}
+.trending-wrapper{
+  position: relative;
+
+}
+.scroll-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 5;
+    width: 48px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+.scroll-btn:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+  }
+  .trending-wrapper:hover .scroll-btn {
+  opacity: 1;
+}
+
+.scroll-left { left: 10px; }
+.scroll-right { right: 10px; }
+
+
+/* Trending container */
+.trending-container {
+  display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding-bottom: 15px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.trending-container::-webkit-scrollbar {
+  height: 8px;
+}
+.trending-container::-webkit-scrollbar-thumb{
+  background-color: #555;
+      border-radius: 4px;
+}
+/* Individual card */
+.show-card {
+      position: relative;
+      flex: 0 0 auto;
+      width: 180px;
+      height: 260px;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+}
+
+.trending-item:hover {
+  transform: scale(1.08);
+
+}
+
+/* Poster image */
+.trending-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.trending-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Rank number */
+.rank-number {
+      position: absolute;
+      left: -18px;
+      bottom: -8px;
+      font-weight: 700;
+      font-size: 7.2rem;
+      line-height: .85;
+      color: #000;
+      -webkit-text-stroke: 4px #fff;
+      z-index: 1;
+      pointer-events: none;
+      opacity: .95;
+      line-height: 1;
+  
+}
+
+/* Gradient overlay for text visibility */
+.poster-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 60%);
+  z-index: 2;
+  overflow-x: auto;
+}
+
+.trending-item:hover .poster-title {
+  color: #e50914; /* Netflix red */
+}
+
+/* Hover overlay for play button */
+.play-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: opacity 0.3s ease;
+}
+
+.trending-item:hover .play-overlay {
+  opacity: 1;
+}
+
+/* Play button */
+.play-btn {
+  background: #e50914;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.play-btn:hover {
+  background: #f40612;
+}
+.poster-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  z-index: 3;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+  color: #fff;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .trending-item {
+    width: 140px;
+    height: 210px;
+  }
+
+  .rank-number {
+    font-size: 6rem;
+    left: -15px;
+  }
+
+}
+/*----------------------------------------------------------TRENDING NOW ENDS CSS-------------------------------------------------------------*/
+/*--------------------------------------------------MORE REASONS BEGINS CSS-------------------------------------------------------------------------------*/
+
+    .reasons-section {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .reasons-section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .reason-card {
+      background: linear-gradient(135deg, #1b0f2b 0%, #0d0d28 100%);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      min-height: 220px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .reason-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .reason-card h3 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .reason-card p {
+      color: #ccc;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    .reason-icon {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      width: 50px;
+      height: 50px;
+    }
+
+    /* Gradient glow for icons */
+    .reason-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 0 10px rgba(255, 0, 150, 0.6));
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      .reasons-section h2 {
+        font-size: 1.3rem;
+      }
+    }
+/*----------------------------------------------END OF MORE REASONS CSS---------------------------------------------------------------------------*/
+/*----------------------------------------------FREQUENTLY ASKED QUESTIONS------------------------------------------------------------------------------------*/
+
+:root {
+  --bg: #0f0f10;
+  --panel: #2f2f2f;
+  --text: #f5f5f5;
+  --muted: #cfcfcf;
+  --radius: 8px;
+  --width: 900px;
+}
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: block;
+  padding: 36px;
+}
+
+.faq-page {
+  width: min(96%, var(--width));
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.4rem; /* bigger base font for everything */
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.faq-item {
+  background: var(--panel);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.faq-question {
+  cursor: pointer;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem; /* same size for question */
+  font-weight: 700;
+  color: var(--text);
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after {
+  content: "+";
+  font-size: 2.5rem;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+details[open] > .faq-question::after {
+  content: "×";
+  color: white;
+}
+
+.faq-answer {
+  padding: 24px 28px 28px 28px;
+  color: var(--text); /* same color as question */
+  font-size: 1.6rem; /* same size as question */
+  line-height: 1.7;
+  background: #3b3b3b;
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 520px) {
+  .title { font-size: 2rem; }
+  .faq-question { padding: 18px; font-size: 1.2rem; }
+  .faq-answer { padding: 16px 18px; font-size: 1.3rem; }
+}
+
+/*-----------------------------------------------FREQUENTLY ASKED QUESTIONS ENDS CSS--------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------FOOTER BEGINS CSS---------------------------------------------------------------------------------------------------------------*/
+.email-form {
+    display: flex;
+    justify-content: center;
+    max-width: 670px;
+    margin: 0 auto;
+}
+.email-input {
+    flex-grow: 1;
+    padding: 10px 10px 0;
+    height: 60px;
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+    background-color: rgba(22,22,22,0.7);
+    color: white;
+    min-width: 450px;
+}
+.email-input:focus {
+    outline: none;
+    border-color: white;
+}
+.get-started-btn {
+    background-color: #e50914;
+    color: white;
+    font-size: 1.625rem;
+    border: none;
+    padding: 0 1em;
+    border-radius: 2px;
+    cursor: pointer;
+    min-width: 180px;
+    font-weight: 400;
+}
+.footer {
+    border-top: 1px solid #737373;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-top {
+    margin-bottom: 30px;
+}
+.phone-number {
+    color: #757575;
+    font-size: 16px;
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.footer-link {
+    color: #757575;
+    text-decoration: none;
+    font-size: 13px;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
+.language-selector {
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+}
+.language-btn {
+    background-color: #000;
+    color: #999;
+    border: 1px solid #333;
+    padding: 12px 26px 12px 50px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.language-btn::before {
+    content: icon;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translate(-50%);
+}
+.footer-bottom {
+    color: #757575;
+    font-size: 11px;
+    margin-top: 20px;
+}
+.recaptcha-notice {
+    margin-top: 10px;
+}
+.recaptcha-notice a {
+    color: #0071eb;
+    text-decoration: none;
+}
+.recaptcha-notice a:hover {
+    text-decoration: underline;
+}
+.p{
+  align-items: center;
+}
+
+  /*-------------------------------------FOOTER ENDS CSS-----------------------------------------------------------------------------*/
+
+
+
